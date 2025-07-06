@@ -1,6 +1,3 @@
-import { navigationRoutes } from "@/constants/navigationRoutes.constant";
-import Link from "next/link";
-
 /**
  * @description React 19 Features showcase component
  */
@@ -26,12 +23,6 @@ export default function React19Features() {
               addOptimistic(!isLiked) // Instant feedback!
             </code>
           </div>
-          <Link
-            href={navigationRoutes.home}
-            className="inline-block mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors cursor-pointer"
-          >
-            Test Like Buttons →
-          </Link>
         </div>
 
         {/* useTransition Demo */}
@@ -47,12 +38,6 @@ export default function React19Features() {
               startTransition(() =&gt; deleteRecipe())
             </code>
           </div>
-          <Link
-            href={navigationRoutes.home}
-            className="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer"
-          >
-            Test Delete Button →
-          </Link>
         </div>
 
         {/* Ref as Prop Demo */}
