@@ -7,7 +7,7 @@ import { MESSAGES } from "@/constants/messages.constant";
  */
 export async function GET(
   _request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Async request to ensure params are fully resolved

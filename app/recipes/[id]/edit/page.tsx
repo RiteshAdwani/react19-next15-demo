@@ -9,7 +9,7 @@ import { apiPaths } from "@/constants/apiPaths.constant";
 export default async function EditRecipePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
   // Await the params object to ensure it's fully resolved
   const resolvedParams = await params;
